@@ -1,7 +1,15 @@
-# pizza_sales__analysis
 
-<br >
+<h1 align="center"> 🛠️ Research Questions </h1>
+<br />
 
-<p align="center">
-  <img src="./data_model.png" alt="Pizza sales data dashboard">
-</p>
+## 1. 
+
+```sql 
+
+```
+
+## 2.
+
+```sql
+
+```
