@@ -1,0 +1,39 @@
+
+
+CREATE TABLE order_details (
+    order_id int NOT NULL,
+    order_details_id int  PRIMARY KEY NOT NULL,
+    pizza_id varchar(100)   NOT NULL,
+    quantity int   NOT NULL
+);
+
+CREATE TABLE "pizza_types" (
+    pizza_type_id varchar(100) PRIMARY KEY NOT NULL,
+    name varchar(200)   NOT NULL,
+    category varchar(200)   NOT NULL,
+    ingredients varchar(200)   NOT NULL
+);
+
+CREATE TABLE pizzas (
+    pizza_id varchar(100) PRIMARY KEY  NOT NULL,
+    pizza_type_id varchar(100)   NOT NULL,
+    size char(5)   NOT NULL,
+    price numeric(5,2)   NOT NULL
+);
+
+CREATE TABLE orders (
+    order_id int PRIMARY KEY  NOT NULL,
+    date date   NOT NULL,
+    time time   NOT NULL
+
+);
+
+ALTER TABLE order_details ADD CONSTRAINT "fk_order_details_order_id" FOREIGN KEY("order_id")
+REFERENCES "orders" ("order_id");
+
+ALTER TABLE order_details ADD CONSTRAINT "fk_order_details_pizza_id" FOREIGN KEY("pizza_id")
+REFERENCES "pizzas" ("pizza_id");
+
+ALTER TABLE pizzas ADD CONSTRAINT "fk_pizzas_pizza_type_id" FOREIGN KEY("pizza_type_id")
+REFERENCES "pizza_types" ("pizza_type_id");
+
