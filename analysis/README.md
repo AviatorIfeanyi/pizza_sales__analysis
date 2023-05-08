@@ -2,19 +2,7 @@
 <h1 align="center"> 🛠️ Research Questions </h1>
 <br />
 
-## 1.  
-## 2.  
-## 3. 
-## 4. 
-## 5. Total pizza types
-## 6. Quantity sold by Size
-## 7 
-## 8.  
-## 9.  
-## 10. 
-## 11. Busiest and least selling time
-## 12. 
-## 13.
+
 
 <br />
 <br />
